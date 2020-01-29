@@ -179,3 +179,14 @@ nav a:hover {
 .left-border {
     border: none;
 }
+#middle-section {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    width: 1440px;
+    margin-top: 2px;
+}
+.middle-images img{
+    width: 357px;
+    height: 200px;
+}
