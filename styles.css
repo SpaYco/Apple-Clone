@@ -176,9 +176,6 @@ nav a:hover {
 	width: 540px;
 	height: 28px;
 }
-.left-border {
-    border: none;
-}
 #middle-section {
     display: flex;
     justify-content: space-between;
@@ -189,4 +186,42 @@ nav a:hover {
 .middle-images img{
     width: 357px;
     height: 200px;
+}
+footer {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+footer a {
+    color: rgb(0, 136, 204);
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+#top-footer {
+    display: grid;
+    align-items: center;
+}
+#top-footer p {
+    grid-column: 2;
+}
+#top-footer div {
+    display: flex;
+    align-items: center;
+    grid-column: 4;
+    grid-row: 1;
+}
+.site-links {
+    border-left: 0.5px solid gray;
+}
+footer a {
+    padding: 0 5px;
+}
+
+#copyright {
+    margin-top: 10px;
+}
+.left-border {
+    border: none;
 }
