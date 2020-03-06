@@ -51,7 +51,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   box-shadow: 0 -2px rgb(70, 70, 70);
 }
 
@@ -143,60 +143,23 @@ nav a:hover {
   width: 357px;
   height: 200px;
 }
-
+.search-container, .search-container * {
+  transition: 500ms;
+}
 .search-container:focus-within img {
-  animation-name: searchColor;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  filter: none;
 }
 
 .search-container:focus-within input {
-  animation-name: inputSize;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  width: 140px;
 }
 
 .search-container:focus-within .search {
-  animation-name: searchSize;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
+  width: 160px;
+  background: white;
+  box-shadow: none;
 }
 
-@keyframes searchColor {
-  from {
-    filter: brightness(0%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) contrast(103%);
-  }
-
-  to {
-    filter: none;
-  }
-}
-
-@keyframes inputSize {
-  from {
-    width: 80px;
-    background: none;
-  }
-
-  to {
-    width: 140px;
-    background: white;
-  }
-}
-
-@keyframes searchSize {
-  from {
-    width: 100px;
-    background: none;
-    box-shadow: 0 -2px rgb(70, 70, 70);
-  }
-
-  to {
-    width: 160px;
-    background: white;
-    box-shadow: none;
-  }
-}
 
 #top-text-container {
   display: flex;
